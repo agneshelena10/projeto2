@@ -1,17 +1,13 @@
 body {
-    margin: auto;
+    margin: 0;
     
 }
-h1{
-    font-family: 'Pacifico', cursive;
-    text-decoration-color: white;
 
-}
 h3 {
-    font-family: 'Pacifico', cursive;
+    font-family: sans-serif;
 }
-.span{
-    color: green;
+span{
+   text-decoration-color:  green;
    
 }
 
@@ -34,46 +30,64 @@ main p{
     grid-area: linha-verde;
     background-color: green
 }
-.linha-verde p{
-    position: relative;
-    font-size: 1rem; 
-    text-align: center;
 
-    
-}
 header{
     grid-area: header;
     background-image: url(pasta-imagens/banner.png);
     background-size: cover;
     display: flex;
    
+} 
+    h1{ 
+    font-family: 'Pacifico', cursive;
+    text-decoration-color: white;
+    justify-content: flex-start;
+   
+
+}
+.primeiro{
+    color: white;
+    display: flex;
+    justify-content: center; 
+    flex-flow: row wrap;
+
+
+   
+
+}
+
+.primeiro span{
+    color: green;
 }
 header div {
     
     color: white
 }
+ 
+.div-icones{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.esqueceu-do-pai {
+      display: flex; 
+    justify-content: center;
+      
+
+}
 .icones-header {
-    width: 50px;
-    height:50px;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    border-radius: 100%;
+    background-color: black;
+    padding: 10px;
+    justify-content: space-between; 
+    cursor: pointer;
+  
 
 
 
 }
- .primeiro{
-    color: white;
-    display: flex;
-    justify-content: center; 
-    flex-flow: row wrap;
-    align-items: center;
 
-   
-
-}
 main{
     grid-area: main;
     background-color: white;
@@ -107,19 +121,71 @@ main{
 .contato{
     grid-area:contato;
     background-color: lightgray;
+    display: flex; 
+    justify-content: space-between;
+    
+}
+button {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: green;
+    border-radius: 30px;
+    
+}
+.form{
+    justify-content: center;
+    align-items: center;
+    width:50vw;
+    height:25vh;
+    border:solid 3px;
+    border-radius:20px;
+
+}
+.video{
+
+    border-color: blue;
+    border-radius:10px;
+    border:solid 10px;
 }
 .feedback{
     grid-area:feedback;
+
 }
 footer{
     grid-area:footer;
     background-color: white;
+   
+
 }
-footer img{
-  margin: 0 auto;
-  width: 50px;
-  padding: 50px;
-  align-items: center; 
+.feed-pai{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.lorem-p{
+    font-style: italic;
+}
+.lorem-footer{
+    text-align: center;
+}
+.rostinhos{
+     align-items: center;
+    justify-content: center;
+     
+}
+
+
+.nave{
+    height: 20vh;
+    width: 99vw;
+    text-decoration: none; 
+    display: flex;
+    background-color: lightslategray;
+    justify-content: space-between;
+    align-items: center; 
+}
     
 }
 @media (min-width:768px) {
